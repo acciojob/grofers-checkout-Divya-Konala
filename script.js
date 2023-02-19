@@ -11,11 +11,12 @@ let totalPrice=0;
   }
   console.log(totalPrice);
   let row=document.createElement("tr");
-  let td1=document.createElement("td");
-  td1.textContent="Total Price";
+//   let td1=document.createElement("td");
+//   td1.textContent="Total Price";
   let td2=document.createElement("td");
   td2.textContent=totalPrice;
-  row.append(td1,td2);
+  td2.setAttribute("id","ans");
+  row.append(td2);
   document.querySelector("table").append(row);
 };
 
